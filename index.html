@@ -3,48 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Contact form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main class="forms-app">
+    <h1 class="forms-app__title">Contact Us</h1>
+  <form class="forms-data">
+    <label for="fname" class="forms-data__label">First Name *</label>
+    <input type="text" name="fname" id="" class="forms-data__input" placeholder="Roberto">
+    <span class="forms--data__msg-error">This field is required</span>
 
-  Contact Us
+    <label for="lname">Last Name *</label>  
+    <input type="text" name="lname" id="" class="forms-data__input" placeholder="Smith">
+    <span class="forms--data__msg-error">This field is required</span>
 
-  First Name
-  This field is required
+    <label for="email">Email Address *</label>
+    <input type="email" name="email" id="" class="forms-data__input" placeholder="softwaredevelop@gmail.com">
+    <span class="forms--data__msg-error">Please enter a valid email address</span>
+    <span class="forms--data__msg-error">This field is required</span>
 
-  Last Name
-  This field is required
+    <label for="">Query Type</label>
+    <label for=""><input type="radio" name="query" id="" class="forms-data__radio">General Enquiry</label>
+    <label for=""><input type="radio" name="query" id="" class="forms-data__radio">Support Request</label>
+    <span class="forms--data__msg-error">Please select a query type</span>
 
-  Email Address
-  Please enter a valid email address
-  This field is required
+    <label for="msg-area" class="forms-data__input">Message</label>
+    <textarea name="msg-area" id="" class="forms-data__msg"></textarea>
+    <span class="forms--data__msg-error">This field is required</span>
 
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
+    <label for="" class="forms-data__input"><input type="checkbox" name="" id="">I consent to being contacted by the team</label>
+    <span class="forms--data__msg-error">To submit this form, please consent to being contacted</span>
 
-  Message
-  This field is required
-
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
-
-  Submit
-
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
-  
-  <footer class="attribution">
+    <input type="button" value="Submit"></input>
+  </form>
+  <div class="msg-success">
+    <p>Message Sent!</p>
+    <p>Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
+  </main>
+  <footer class="footer-copy">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Caio Lucas</a>.
   </footer>
