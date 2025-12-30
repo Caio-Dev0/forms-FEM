@@ -9,34 +9,58 @@
 </head>
 <body>
   <main class="forms-app">
+
     <h1 class="forms-app__title">Contact Us</h1>
+
   <form class="forms-data">
-    <label for="fname" class="forms-data__label">First Name *</label>
-    <input type="text" name="fname" id="fname" class="forms-data__input" placeholder="Roberto">
-    <span class="forms--data__msg-error">This field is required</span>
 
-    <label for="lname" class="forms-data__label">Last Name *</label>  
-    <input type="text" name="lname" id="lname" class="forms-data__input" placeholder="Smith">
-    <span class="forms--data__msg-error">This field is required</span>
+      <div class="forms-data__wrapper">
+      <label for="fname" class="forms-data__label">First Name *</label>
+      <input type="text" name="fname" id="fname" class="forms-data__input" placeholder="Roberto">
+      <span class="forms--data__msg-error">This field is required</span>
 
-    <label for="email" class="forms-data__label">Email Address *</label>
-    <input type="email" name="email" id="email" class="forms-data__input" placeholder="softwaredevelop@gmail.com">
-    <span class="forms--data__msg-error">Please enter a valid email address</span>
-    <span class="forms--data__msg-error">This field is required</span>
+      </div> 
 
-    <label for="" class="forms-data__label">Query Type</label>
-    <label for="radio-general" class="forms-data__label"><input type="radio" name="query" id="radio-general" class="forms-data__radio">General Enquiry</label>
-    <label for="radio-support" class="forms-data__label"><input type="radio" name="query" id="radio-support" class="forms-data__radio">Support Request</label>
-    <span class="forms--data__msg-error">Please select a query type</span>
+      <div class="forms-data__wrapper">
 
-    <label for="msg-area"  class="forms-data__label">Message</label>
-    <textarea name="msg-area" id="msg-area" class="forms-data__msg"></textarea>
-    <span class="forms--data__msg-error">This field is required</span>
+      <label for="lname" class="forms-data__label">Last Name *</label>  
+      <input type="text" name="lname" id="lname" class="forms-data__input" placeholder="Smith">
+      <span class="forms--data__msg-error">This field is required</span>
 
-    <label for="checkbox-cosent" class="forms-data__label"><input type="checkbox" name="" id="checkbox-cosent">I consent to being contacted by the team</label>
-    <span class="forms--data__msg-error">To submit this form, please consent to being contacted</span>
+    </div>
+    <div class="forms-data__wrapper grid-span2">
+      <label for="email" class="forms-data__label">Email Address *</label>
 
-    <input type="button" value="Submit"></input>
+      <input type="email" name="email" id="email" class="forms-data__input" placeholder="softwaredevelop@gmail.com">
+      <span class="forms--data__msg-error">Please enter a valid email address</span>
+      <span class="forms--data__msg-error">This field is required</span>
+
+    </div>
+    <div class="forms-data__wrapper grid-span2 radio">
+
+      <label for="" class="forms-data__label grid-span2" >Query Type</label>
+      <label for="radio-general" class="forms-data__label"><input type="radio" name="query" id="radio-general" class="forms-data__radio">General Enquiry</label>
+      <label for="radio-support" class="forms-data__label"><input type="radio" name="query" id="radio-support" class="forms-data__radio">Support Request</label>
+      <span class="forms--data__msg-error">Please select a query type</span>
+      
+    </div>
+    <div class="forms-data__wrapper grid-span2">
+
+      <label for="msg-area"  class="forms-data__label">Message</label>
+      <textarea name="msg-area" id="msg-area" class="forms-data__msg"></textarea>
+      <span class="forms--data__msg-error">This field is required</span>
+
+    </div>
+    <div class="forms-data__wrapper grid-span2">
+
+      <label for="checkbox-cosent" class="forms-data__label"><input type="checkbox" name="" id="checkbox-cosent">I consent to being contacted by the team</label>
+      <span class="forms--data__msg-error">To submit this form, please consent to being contacted</span>
+
+    </div>  
+
+    </div class="forms-data__wrapper">
+      <input type="button" value="Submit" class="btn-submit grid-span2"></input>
+    </div> 
   </form>
   <div class="msg-success">
     <p>Message Sent!</p>
