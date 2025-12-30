@@ -5,34 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Frontend Mentor | Contact form</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main class="forms-app">
     <h1 class="forms-app__title">Contact Us</h1>
   <form class="forms-data">
     <label for="fname" class="forms-data__label">First Name *</label>
-    <input type="text" name="fname" id="" class="forms-data__input" placeholder="Roberto">
+    <input type="text" name="fname" id="fname" class="forms-data__input" placeholder="Roberto">
     <span class="forms--data__msg-error">This field is required</span>
 
-    <label for="lname">Last Name *</label>  
-    <input type="text" name="lname" id="" class="forms-data__input" placeholder="Smith">
+    <label for="lname" class="forms-data__label">Last Name *</label>  
+    <input type="text" name="lname" id="lname" class="forms-data__input" placeholder="Smith">
     <span class="forms--data__msg-error">This field is required</span>
 
-    <label for="email">Email Address *</label>
-    <input type="email" name="email" id="" class="forms-data__input" placeholder="softwaredevelop@gmail.com">
+    <label for="email" class="forms-data__label">Email Address *</label>
+    <input type="email" name="email" id="email" class="forms-data__input" placeholder="softwaredevelop@gmail.com">
     <span class="forms--data__msg-error">Please enter a valid email address</span>
     <span class="forms--data__msg-error">This field is required</span>
 
-    <label for="">Query Type</label>
-    <label for=""><input type="radio" name="query" id="" class="forms-data__radio">General Enquiry</label>
-    <label for=""><input type="radio" name="query" id="" class="forms-data__radio">Support Request</label>
+    <label for="" class="forms-data__label">Query Type</label>
+    <label for="radio-general"><input type="radio" name="query" id="radio-general" class="forms-data__radio">General Enquiry</label>
+    <label for="radio-support"><input type="radio" name="query" id="radio-support" class="forms-data__radio">Support Request</label>
     <span class="forms--data__msg-error">Please select a query type</span>
 
-    <label for="msg-area" class="forms-data__input">Message</label>
-    <textarea name="msg-area" id="" class="forms-data__msg"></textarea>
+    <label for="msg-area"  class="forms-data__label">Message</label>
+    <textarea name="msg-area" id="msg-area" class="forms-data__msg"></textarea>
     <span class="forms--data__msg-error">This field is required</span>
 
-    <label for="" class="forms-data__input"><input type="checkbox" name="" id="">I consent to being contacted by the team</label>
+    <label for="checkbox-cosent" class="forms-data__label"><input type="checkbox" name="" id="checkbox-cosent">I consent to being contacted by the team</label>
     <span class="forms--data__msg-error">To submit this form, please consent to being contacted</span>
 
     <input type="button" value="Submit"></input>
@@ -43,8 +44,8 @@
   </div>
   </main>
   <footer class="footer-copy">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Caio Lucas</a>.
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.</p>
+    <p>Coded by <a href="#">Caio Lucas</a>.</p>
   </footer>
 </body>
 </html>
