@@ -15,7 +15,10 @@
 html, body {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+}
+
+*{
+       box-sizing: border-box;
 }
 
 html {
@@ -35,8 +38,8 @@ body {
 /* Container Principal */
 .forms-app {
     background-color: var(--White);
-    width: 100%;
-    max-width: 32rem; /* Garantindo o breakpoint de 320px */
+    width: 80%;
+    max-width: 56.7rem; /* Garantindo o breakpoint de 320px */
     padding: 2.4rem;
     border-radius: 1.6rem;
 
@@ -63,6 +66,7 @@ body {
     }
 
     .forms-data__input, .forms-data__msg {
+        width: 100%;
         padding: 1.2rem 0.5rem;
         border: 0.1rem solid var(--Grey-500);
         border-radius: 0.8rem;
@@ -165,4 +169,24 @@ body {
         text-decoration: none;
         font-weight: var(--peso-700);
     }
+}
+
+@media (min-width: 576px){
+    .forms-app{
+        width: 90%;
+    }
+    .forms-data{
+            display: grid;
+            grid-template-columns: 1fr 1fr;   
+    }
+    
+    .grid-span2{
+        grid-column: span 2
+    }
+
+    .radio{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.6rem;
+    } 
 }
