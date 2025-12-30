@@ -70,7 +70,7 @@ body {
         outline: none;
         transition: border 0.3s ease;
 
-        &:focus {
+        &:focus, &:hover {
             border-color: var(--verde-600);
         }
     }
@@ -113,10 +113,14 @@ body {
         padding: 1.6rem;
         border-radius: 0.8rem;
         cursor: pointer;
-        transition: opacity 0.3s;
+        transition: 0.3s;
 
         &:hover {
             opacity: 0.9;
+            transform: scale(1.05);
+        }
+        &:active{
+            transform: scale(1);
         }
     }
 }
