@@ -132,8 +132,7 @@ body {
 /* Mensagens de Erro */
 .forms--data__msg-error {
     color: var(--vermelho);
-    font-size: 1.4rem;
-    margin-top: -0.8rem;
+    font-size: var(--font-16);
     display: none;
 }
 
