@@ -17,7 +17,7 @@
       <div class="forms-data__wrapper">
       <label for="fname" class="forms-data__label">First Name *</label>
       <input type="text" name="fname" id="fname" class="forms-data__input" placeholder="Roberto" required>
-      <span class="forms--data__msg-error">This field is required</span>
+      <span class="forms--data__msg-error error-fname">This field is required</span>
 
       </div> 
 
@@ -25,15 +25,15 @@
 
       <label for="lname" class="forms-data__label">Last Name *</label>  
       <input type="text" name="lname" id="lname" class="forms-data__input" placeholder="Smith" required>
-      <span class="forms--data__msg-error">This field is required</span>
+      <span class="forms--data__msg-error error-lname">This field is required</span>
 
     </div>
     <div class="forms-data__wrapper grid-span2">
       <label for="email" class="forms-data__label">Email Address *</label>
 
       <input type="email" name="email" id="email" class="forms-data__input" placeholder="softwaredevelop@gmail.com" required>
-      <span class="forms--data__msg-error">Please enter a valid email address</span>
-      <span class="forms--data__msg-error">This field is required</span>
+      <span class="forms--data__msg-error email-invalid">Please enter a valid email address</span>
+      <span class="forms--data__msg-error error-email">This field is required</span>
 
     </div>
     <div class="forms-data__wrapper grid-span2 radio">
@@ -41,20 +41,20 @@
       <label for="" class="forms-data__label grid-span2" >Query Type</label>
       <label for="radio-general" class="forms-data__label"><input type="radio" name="query" id="radio-general" class="forms-data__radio">General Enquiry</label>
       <label for="radio-support" class="forms-data__label"><input type="radio" name="query" id="radio-support" class="forms-data__radio">Support Request</label>
-      <span class="forms--data__msg-error">Please select a query type</span>
+      <span class="forms--data__msg-error error-radio">Please select a query type</span>
       
     </div>
     <div class="forms-data__wrapper grid-span2">
 
       <label for="msg-area"  class="forms-data__label">Message</label>
       <textarea name="msg-area" id="msg-area" class="forms-data__msg" required></textarea>
-      <span class="forms--data__msg-error">This field is required</span>
+      <span class="forms--data__msg-error error-message">This field is required</span>
 
     </div>
     <div class="forms-data__wrapper grid-span2">
 
       <label for="checkbox-cosent" class="forms-data__label"><input type="checkbox" name="" id="checkbox-cosent" required>I consent to being contacted by the team</label>
-      <span class="forms--data__msg-error">To submit this form, please consent to being contacted</span>
+      <span class="forms--data__msg-error error-checkbox">To submit this form, please consent to being contacted</span>
 
     </div>  
 
