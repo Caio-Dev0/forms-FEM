@@ -108,7 +108,7 @@ body {
     }
 
     /* Botão Submit */
-    input[type="button"] {
+    .btn-submit {
         background-color: var(--verde-600);
         color: var(--White);
         font-size: 1.8rem;
