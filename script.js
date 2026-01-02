@@ -30,6 +30,9 @@ btnSubmit.addEventListener("click", function(){
 forms.addEventListener('submit', function(evento){
     evento.preventDefault()
     msgSuccess.style.display = "block";
+     setTimeout(function(){
+        msgSuccess.style.display = "none";
+    }, 2000)
 })
 
 
