@@ -138,6 +138,9 @@ body {
 
 /* Mensagem de Sucesso */
 .msg-success {
+    position: absolute;
+    top: 0;
+    left: 35%;
     display: none;
     background-color: var(--Grey-900);
     color: var(--White);
