@@ -13,6 +13,7 @@ const inputEmail = document.querySelector("#email")
 const btnRados = document.querySelectorAll("input[type='radio']")
 const textArea = document.querySelector("#msg-area")
 const checkbox = document.querySelector("#checkbox-cosent")
+const forms = document.querySelector(".forms-data")
 
 btnSubmit.addEventListener("click", function(){
     validaFname()
@@ -25,6 +26,12 @@ btnSubmit.addEventListener("click", function(){
     validaTextArea()
     validaCheckbox()
 })
+
+forms.addEventListener('submit', function(evento){
+    evento.preventDefault()
+    msgSuccess.style.display = "block";
+})
+
 
 const validaFname = () => inputFname.value === '' ? errorFname.style.display = "block" : errorFname.style.display = "none"
 const validaLname = () => inputLname.value === '' ? errorLname.style.display = "block" : errorLname.style.display = "none"
